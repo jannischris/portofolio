@@ -1,0 +1,86 @@
+[
+  {
+    "id": "mercedes-turnaround",
+    "title": "How Mercedes Went From Hell to Heaven",
+    "subtitle": "Value-over-volume, platform efficiency & capital discipline",
+    "thumbnail": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80",
+    "date": "2026-02-10",
+    "tags": ["Strategy", "Automotive"],
+    "tldr": [
+      "Shift from volume to premium mix & pricing discipline.",
+      "Reduce complexity via modular platforms.",
+      "Capital allocation guided by ROIC logic."
+    ],
+    "markdown": "## TL;DR\n- Mercedes moved from **volume mindset** to **value-over-volume** (premium mix, pricing discipline).\n- Reduced product complexity with **platform + modular efficiency**.\n- Introduced **capital discipline**: fewer low-return initiatives, more ROIC-driven bets.\n\n## Context\nOver time, chasing share and volume can dilute a premium brand and compress margins.\n\n## The strategic shift\n### 1) Product & mix\n- Focus on higher-margin segments\n- Cleaner portfolio, fewer variants\n\n### 2) Pricing discipline\n- Fewer aggressive promotions\n- Brand-led pricing and channel control\n\n### 3) Operating model\n- Standardization where it reduces cost\n- Faster cycles, lower unit cost\n\n### 4) Capital discipline\n- Clear business cases\n- Cut low-return initiatives\n\n## Risks & trade-offs\n- Premium focus can reduce volume — you must tolerate it.\n- Standardization can hurt differentiation if design/experience is weak.\n\n## What I would do next\nBuild a dashboard: **mix %, ASP, discount rate, segment contribution margin**, plus a **complexity tax** metric."
+  },
+  {
+    "id": "zalando-unit-economics",
+    "title": "Zalando: Unit Economics Under Pressure",
+    "subtitle": "Returns, logistics costs & the margin reality of e-commerce",
+    "thumbnail": "https://images.unsplash.com/photo-1520975682031-ae4ec7ce12b7?auto=format&fit=crop&w=1600&q=80",
+    "date": "2026-02-06",
+    "tags": ["Unit Economics", "E-commerce", "Operations"],
+    "tldr": [
+      "Returns behave like a hidden COGS in fashion e-commerce.",
+      "Logistics + last-mile quality is a strategic lever, not a support function.",
+      "Contribution margin clarity beats top-line growth vanity."
+    ],
+    "markdown": "## TL;DR\n- In fashion e-commerce, **returns = hidden COGS**.\n- Logistics performance is a **strategic lever**.\n- Use contribution margin per cohort, not just revenue growth.\n\n## Core drivers\n- Return rate by category\n- Picking/packing cost per order\n- Last-mile cost & service levels\n- Discount rate and promo dependency\n\n## What I would do next\nSegment customers by return behavior, enforce smarter incentives, and track contribution margin by cohort."
+  },
+  {
+    "id": "n26-risk-growth",
+    "title": "N26: Growth vs Risk — When Compliance Becomes Strategy",
+    "subtitle": "Fintech scaling, controls, and the cost of weak risk foundations",
+    "thumbnail": "https://images.unsplash.com/photo-1559526324-593bc073d938?auto=format&fit=crop&w=1600&q=80",
+    "date": "2026-01-29",
+    "tags": ["Strategy", "Fintech", "Risk"],
+    "tldr": [
+      "Risk/compliance maturity is a scaling constraint, not a back-office issue.",
+      "Growth without controls creates regulatory drag and reputation cost.",
+      "Operating model must be designed for auditability."
+    ],
+    "markdown": "## TL;DR\n- Compliance is not bureaucracy — it is **scaling infrastructure**.\n- Weak controls turn into regulatory drag, operational cost, and reputation risk.\n\n## What changes when you scale\n- More markets = more KYC/AML complexity\n- Higher transaction volumes = more monitoring requirements\n\n## What I would do next\nDefine a risk operating model with clear ownership, metrics, and audit-ready processes."
+  },
+  {
+    "id": "adidas-turnaround",
+    "title": "Adidas: Rebuilding Brand Heat Without Burning Margin",
+    "subtitle": "Product cadence, channel strategy & pricing power",
+    "thumbnail": "https://images.unsplash.com/photo-1528701800489-20be3c8f6f2a?auto=format&fit=crop&w=1600&q=80",
+    "date": "2026-01-22",
+    "tags": ["Strategy", "Brand", "Pricing"],
+    "tldr": [
+      "Brand heat must translate into pricing power — otherwise it’s just noise.",
+      "Channel mix (DTC vs wholesale) changes economics and control.",
+      "Inventory discipline is a strategic moat in consumer goods."
+    ],
+    "markdown": "## TL;DR\n- Brand momentum matters only if it becomes **pricing power**.\n- Channel mix drives margin, data, and customer control.\n\n## Strategic levers\n- Product cadence (drops vs always-on)\n- Channel strategy (DTC vs wholesale)\n- Inventory discipline\n\n## What I would do next\nTrack discount rate as a KPI, segment products by pricing power, and align inventory to demand signals."
+  },
+  {
+    "id": "tesla-cost-advantage",
+    "title": "Tesla: The Operating System Behind the Cost Advantage",
+    "subtitle": "Manufacturing simplification, vertical integration & speed loops",
+    "thumbnail": "https://images.unsplash.com/photo-1619767886558-efdc259cde1b?auto=format&fit=crop&w=1600&q=80",
+    "date": "2026-01-14",
+    "tags": ["Strategy", "Operations"],
+    "tldr": [
+      "Cost advantage is built via process design, not slogans.",
+      "Speed loops shorten learning cycles and reduce rework cost.",
+      "Vertical integration is a trade-off: control vs complexity."
+    ],
+    "markdown": "## TL;DR\n- Operating model creates cost advantage.\n- Faster iteration reduces rework and improves quality.\n\n## Trade-offs\n- Integration increases control but adds complexity.\n- Standardization lowers cost but risks sameness.\n\n## What I would do next\nQuantify savings per design simplification and link it to cycle-time KPIs."
+  },
+  {
+    "id": "controlling-germany",
+    "title": "Controlling in Germany: The Hidden Career Accelerator",
+    "subtitle": "Budgeting, variance analysis & performance steering in practice",
+    "thumbnail": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1600&q=80",
+    "date": "2026-01-05",
+    "tags": ["Controlling", "FP&A", "Germany"],
+    "tldr": [
+      "Controlling is business partnering + performance steering.",
+      "You own planning, variance analysis, and KPI reviews.",
+      "Great controllers become finance leaders."
+    ],
+    "markdown": "## TL;DR\n- In German companies, controlling is the function that *steers performance*.\n\n## Typical responsibilities\n- Budgeting and forecasting\n- Actual vs plan commentary\n- KPI dashboards\n\n## What I would do next\nBuild a monthly performance deck: KPIs → drivers → actions → risks → outlook."
+  }
+]
