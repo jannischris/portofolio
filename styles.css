@@ -425,3 +425,29 @@ input[type="search"], select{
     text-align: center;
   }
 }
+
+.contact-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+
+.contact-grid .btn{
+  width:100%;
+  text-align:center;
+  min-width:0;              /* σημαντικό για overflow */
+  white-space:nowrap;       /* κράτα 1 γραμμή */
+  overflow:hidden;          /* κόψε */
+  text-overflow:ellipsis;   /* … */
+}
+.research-note-box{
+  background:#f3f4f6;
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:16px 18px;
+  margin-bottom:24px;
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.6;
+}

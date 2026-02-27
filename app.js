@@ -285,16 +285,12 @@ function openInline(post) {
     ? `<div class="hero"><div style="background-image:url('${post.thumbnail}')"></div></div>`
     : "";
 
-  const tldr = (post.tldr || []).map((x) => `<li>${escapeHtml(x)}</li>`).join("");
 
   articleEl.innerHTML = `
     ${hero}
     <h2>${escapeHtml(post.title)}</h2>
     <p class="muted">${escapeHtml(post.subtitle || "")}</p>
-    <div class="card" style="margin-top:12px;">
-      <strong>TL;DR</strong>
-      <ul>${tldr}</ul>
-    </div>
+ 
     <div style="margin-top:12px;">
       ${markdownToHtml(post.markdown)}
     </div>
