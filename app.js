@@ -1,7 +1,6 @@
-// app.js — SPA routing + Research LIST (cards) + Inline Article
-// Compatible with your index.html + hero three.js module.
+// app.js — SPA routing + Research LIST + Inline Article
 
-const sections = ["home", "research", "about", "contact"];
+const sections = ["home", "research", "about"];
 let postsData = [];
 let currentPost = null;
 
@@ -71,7 +70,6 @@ function markdownToHtml(md) {
 function formatDate(yyyy_mm_dd) {
   const s = String(yyyy_mm_dd || "").trim();
   if (!s) return "";
-  // keep it simple & stable: "2026-02-10" -> "10 Feb 2026"
   const d = new Date(s + "T00:00:00");
   if (Number.isNaN(d.getTime())) return s;
   return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "2-digit" });
@@ -128,7 +126,7 @@ on(window, "hashchange", applyRoute);
 
 // ---------- Elements ----------
 const statusEl = document.getElementById("status");
-const listEl = document.getElementById("posts");      // we will use it as list container now
+const listEl = document.getElementById("posts");
 const articleEl = document.getElementById("article");
 
 const searchInput = document.getElementById("searchInput");
@@ -149,7 +147,8 @@ async function loadPosts() {
   }
 
   try {
-    const res = await fetch("./posts.json", { cache: "no-store" });
+    // ✅ allow caching (faster after first visit)
+    const res = await fetch("./posts.json");
     if (!res.ok) throw new Error(`posts.json not found (HTTP ${res.status})`);
     const data = await res.json();
 
@@ -207,7 +206,7 @@ function matchesFilters(post) {
 on(searchInput, "input", () => renderList());
 on(tagSelect, "change", () => renderList());
 
-// ---------- Research LIST rendering (clickable cards) ----------
+// ---------- Research LIST ----------
 function cardPills(tags) {
   return (tags || [])
     .slice(0, 3)
@@ -221,14 +220,12 @@ function renderList() {
   if (articleEl) articleEl.classList.add("hidden");
   currentPost = null;
 
-  // clear
   listEl.innerHTML = "";
-  listEl.classList.remove("tiles"); // in case CSS had grid assumptions
+  listEl.classList.remove("tiles");
   listEl.classList.add("research-list");
 
   const filtered = postsData
     .filter(matchesFilters)
-    // ✅ NEWEST FIRST
     .sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 
   if (filtered.length === 0) {
@@ -269,7 +266,6 @@ function renderList() {
       </div>
     `;
 
-    // route via click (keep SPA behavior)
     on(a, "click", (e) => {
       e.preventDefault();
       setHash("research", p.id);
